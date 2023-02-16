@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "mainapp",
     "authapp",
     "crispy_forms",
+    'crispy_bootstrap5', 
     "debug_toolbar",
 ]
 
@@ -168,7 +169,9 @@ AUTHENTICATION_BACKENDS = (
 SOCIAL_AUTH_GITHUB_KEY = "6db4a8828f818ddf01e6"
 SOCIAL_AUTH_GITHUB_SECRET = "ca47085f5413ee503bec0b4c585b8a7bf8096904"
 
-CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 LOG_FILE = BASE_DIR / "var" / "log" / "main_log.log"
 
